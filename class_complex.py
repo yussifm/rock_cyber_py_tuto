@@ -32,6 +32,7 @@ account.deposit(500)
 print("Current balance: ", account.get_balance())
 account.withdraw(200)
 print("Current balance: ", account.get_balance())
+print("Account number: ", account.get_balance())  # This will raise an AttributeError because __account_number is private
 
 
 #Polymorphism

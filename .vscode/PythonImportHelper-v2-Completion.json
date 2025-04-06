@@ -389,7 +389,7 @@
         "kind": 5,
         "importPath": "class_complex",
         "description": "class_complex",
-        "peekOfCode": "account = BankAccount(\"123456789\", 1000)\naccount.deposit(500)\nprint(\"Current balance: \", account.get_balance())\naccount.withdraw(200)\nprint(\"Current balance: \", account.get_balance())\n#Polymorphism\n# Polymorphism is the ability to use the same method name for different types of objects\nclass Animal:\n    def sound(self):\n        print(\"Animal makes a sound\")",
+        "peekOfCode": "account = BankAccount(\"123456789\", 1000)\naccount.deposit(500)\nprint(\"Current balance: \", account.get_balance())\naccount.withdraw(200)\nprint(\"Current balance: \", account.get_balance())\nprint(\"Account number: \", account.get_balance())  # This will raise an AttributeError because __account_number is private\n#Polymorphism\n# Polymorphism is the ability to use the same method name for different types of objects\nclass Animal:\n    def sound(self):",
         "detail": "class_complex",
         "documentation": {}
     },
