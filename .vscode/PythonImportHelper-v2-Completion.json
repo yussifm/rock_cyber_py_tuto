@@ -1,0 +1,423 @@
+[
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "collections",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "collections",
+        "description": "collections",
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "class Person:\n    # constructor -> a special method that is called when an object is created\n    def __init__(self, name, age, occupation):\n        # self is a reference to the current object / current instance of the class\n        self.name = name  # attribute\n        self.age = age  # attribute\n        self.occupation = occupation  # attribute\n    # method\n    def greet(self):\n        print(\"Hello, my name is \" + self.name + \", I am \" + str(self.age) + \" years old, and I work as a \" + self.occupation + \".\")",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "class Student(Person):\n    def __init__(self, name, age, occupation, student_id):\n        # Call the constructor of the parent class\n        # super() is used to call the constructor of the parent class\n        # super() returns a temporary object of the superclass\n        super().__init__(name, age, occupation)  # Call the constructor of the parent class\n        self.student_id = student_id  # attribute\n    def study(self):\n        print(\"I am studying.\")\n    def greet(self):",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "def greet(name: str):\n    print(\"Hello, \" + name + \"!\")\ndef add(a: int, b: int) -> int:\n    return a + b  # statement\ndef multiple(a, b):\n    return a * b\n# Slop function\ndef slop_of_curve(x1,x2, y1, y2):\n    return (y1 - y2) / (x1 - x2)\nslop_of_curve(1, 2, 3, 4) # function call",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "def add(a: int, b: int) -> int:\n    return a + b  # statement\ndef multiple(a, b):\n    return a * b\n# Slop function\ndef slop_of_curve(x1,x2, y1, y2):\n    return (y1 - y2) / (x1 - x2)\nslop_of_curve(1, 2, 3, 4) # function call\n#Anonymous function (lambda function)\n# lambda a, b: a + b",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "multiple",
+        "kind": 2,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "def multiple(a, b):\n    return a * b\n# Slop function\ndef slop_of_curve(x1,x2, y1, y2):\n    return (y1 - y2) / (x1 - x2)\nslop_of_curve(1, 2, 3, 4) # function call\n#Anonymous function (lambda function)\n# lambda a, b: a + b\nx = lambda a: a+ 10\nadd = lambda a, b: a + b",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "slop_of_curve",
+        "kind": 2,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "def slop_of_curve(x1,x2, y1, y2):\n    return (y1 - y2) / (x1 - x2)\nslop_of_curve(1, 2, 3, 4) # function call\n#Anonymous function (lambda function)\n# lambda a, b: a + b\nx = lambda a: a+ 10\nadd = lambda a, b: a + b\nmultiple = lambda a, b: a * b\nprint(x(5)) \nprint(add(5, 10))",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "age = 5\nsalary = 100000.5555\nname = \"John Doe\"\nmale = True\nfemale = False\n#Control flow\n# Conditional Statements that allows your program to make decisions based on certain conditions.\nnumber = 5\n#Keyword : if, elif, else\nname = \"Ama\"",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "salary",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "salary = 100000.5555\nname = \"John Doe\"\nmale = True\nfemale = False\n#Control flow\n# Conditional Statements that allows your program to make decisions based on certain conditions.\nnumber = 5\n#Keyword : if, elif, else\nname = \"Ama\"\nif name == \"Ama\":",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "name = \"John Doe\"\nmale = True\nfemale = False\n#Control flow\n# Conditional Statements that allows your program to make decisions based on certain conditions.\nnumber = 5\n#Keyword : if, elif, else\nname = \"Ama\"\nif name == \"Ama\":\n    print(\"Hello Ama\")",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "male",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "male = True\nfemale = False\n#Control flow\n# Conditional Statements that allows your program to make decisions based on certain conditions.\nnumber = 5\n#Keyword : if, elif, else\nname = \"Ama\"\nif name == \"Ama\":\n    print(\"Hello Ama\")\nelse:",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "female",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "female = False\n#Control flow\n# Conditional Statements that allows your program to make decisions based on certain conditions.\nnumber = 5\n#Keyword : if, elif, else\nname = \"Ama\"\nif name == \"Ama\":\n    print(\"Hello Ama\")\nelse:\n    print(\"Hello Coded\")",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "number",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "number = 5\n#Keyword : if, elif, else\nname = \"Ama\"\nif name == \"Ama\":\n    print(\"Hello Ama\")\nelse:\n    print(\"Hello Coded\")\nif number > 0:\n    #code block or block of code\n    print(\"Positive\")",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "name = \"Ama\"\nif name == \"Ama\":\n    print(\"Hello Ama\")\nelse:\n    print(\"Hello Coded\")\nif number > 0:\n    #code block or block of code\n    print(\"Positive\")\n    #Else if\nelif number < 0:",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "fruits = [\"apple\", \"banana\", \"cherry\"] # List of strings (fruits)\nlistOfNumbers = [1, 2, 3, 4, 5] # List of integers (numbers)\nfor Damascus in fruits:\n    if Damascus == \"banana\":\n        break # Break the loop if fruit is banana\n    print(f\"I love: {Damascus}\")\n    print(\"I love: \" + Damascus)\n    print(\"I love: \", Damascus)\n#While loop\ncounter = 5",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "listOfNumbers",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "listOfNumbers = [1, 2, 3, 4, 5] # List of integers (numbers)\nfor Damascus in fruits:\n    if Damascus == \"banana\":\n        break # Break the loop if fruit is banana\n    print(f\"I love: {Damascus}\")\n    print(\"I love: \" + Damascus)\n    print(\"I love: \", Damascus)\n#While loop\ncounter = 5\nwhile counter > 0:",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "counter",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "counter = 5\nwhile counter > 0:\n    print(\"Counter is: \", counter)\n    #\n    counter -= 1 # Decrement counter by 1\n    #counter = counter - 1 # Decrement counter by 1\n#Functions\n# void function\n# Keyword : def ->  helps to define a function\n# function_name(parameters) -> function signature",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "x = lambda a: a+ 10\nadd = lambda a, b: a + b\nmultiple = lambda a, b: a * b\nprint(x(5)) \nprint(add(5, 10))\nprint(multiple(5, 10))\n#Function call\ngreet(\"Alice\")\ngreet(\"AMA\")\naddition = add(5, 10)",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "add = lambda a, b: a + b\nmultiple = lambda a, b: a * b\nprint(x(5)) \nprint(add(5, 10))\nprint(multiple(5, 10))\n#Function call\ngreet(\"Alice\")\ngreet(\"AMA\")\naddition = add(5, 10)\nprint(\"Addition is: \", addition)",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "multiple",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "multiple = lambda a, b: a * b\nprint(x(5)) \nprint(add(5, 10))\nprint(multiple(5, 10))\n#Function call\ngreet(\"Alice\")\ngreet(\"AMA\")\naddition = add(5, 10)\nprint(\"Addition is: \", addition)\nmultiplication = multiple(5, 10)",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "addition",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "addition = add(5, 10)\nprint(\"Addition is: \", addition)\nmultiplication = multiple(5, 10)\nprint(\"Multiple is: \", multiplication)\n# Data Structures\n# List\ncolors = [\"red\", \"green\", \"blue\",] # list start with 0\nfirst_element = colors[0] # first element\nprint(\"First element is: \", first_element)\nprint(\"Colors are: \", colors)",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "multiplication",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "multiplication = multiple(5, 10)\nprint(\"Multiple is: \", multiplication)\n# Data Structures\n# List\ncolors = [\"red\", \"green\", \"blue\",] # list start with 0\nfirst_element = colors[0] # first element\nprint(\"First element is: \", first_element)\nprint(\"Colors are: \", colors)\nprint(\"Length of colors: \", len(colors))\ncolors.append(\"peach\")",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "colors = [\"red\", \"green\", \"blue\",] # list start with 0\nfirst_element = colors[0] # first element\nprint(\"First element is: \", first_element)\nprint(\"Colors are: \", colors)\nprint(\"Length of colors: \", len(colors))\ncolors.append(\"peach\")\ncolors.append(\"white\")\ncolors.append(\"black\")\nprint(\"Colors are: \", colors)\nprint(\"Length of colors: \", len(colors))",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "first_element",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "first_element = colors[0] # first element\nprint(\"First element is: \", first_element)\nprint(\"Colors are: \", colors)\nprint(\"Length of colors: \", len(colors))\ncolors.append(\"peach\")\ncolors.append(\"white\")\ncolors.append(\"black\")\nprint(\"Colors are: \", colors)\nprint(\"Length of colors: \", len(colors))\n#Tuples ",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "dimensions",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "dimensions = (1080, 720)\n#Dictionary\n# Key-value pairs\n# Dictionary is a collection of key-value pairs\nperson = {\n    \"name\": \"AMA\",\n    \"age\": 25,\n    \"city\": \"New York\",\n    \"occupation\": \"Engineer\"\n}",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "person",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "person = {\n    \"name\": \"AMA\",\n    \"age\": 25,\n    \"city\": \"New York\",\n    \"occupation\": \"Engineer\"\n}\nperson.update({\"name\": \"John Doe\"})\nprint(\"Person is: \", person)\nprint(\"Person name is: \", person[\"name\"])\n#Sets ",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "unique_numbers",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "unique_numbers = {1, 2, 3, 4, 5, 5}\nprint(\"Unique numbers are: \", unique_numbers)\nlist_of_dict = [\n    {\"name\": \"John\", \"age\": 30},\n    {\"name\": \"Jane\", \"age\": 25},\n    {\"name\": \"Doe\", \"age\": 35}\n]\nprint(\"List of dict is: \", list_of_dict)\nprint(\"first value of first index: \", list_of_dict[0][\"name\"])\n# File Handling I/O",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "list_of_dict",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "list_of_dict = [\n    {\"name\": \"John\", \"age\": 30},\n    {\"name\": \"Jane\", \"age\": 25},\n    {\"name\": \"Doe\", \"age\": 35}\n]\nprint(\"List of dict is: \", list_of_dict)\nprint(\"first value of first index: \", list_of_dict[0][\"name\"])\n# File Handling I/O\n# Open a file in write mode\nwith open(\"example.docx\", \"w\") as file:",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "person1",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "person1 = Person(\"John Doe\", 30, \"Engineer\")\nalice = Person(\"Alice\", 25, \"Doctor\")\nAma = Person(\"AMA\", 25, \"Engineer\")\n# Call the method of the object\nperson1.greet()\nalice.greet()\nAma.greet()\n# Inheritance\n# Inheritance is a way to create a new class from an existing class\nclass Student(Person):",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "alice",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "alice = Person(\"Alice\", 25, \"Doctor\")\nAma = Person(\"AMA\", 25, \"Engineer\")\n# Call the method of the object\nperson1.greet()\nalice.greet()\nAma.greet()\n# Inheritance\n# Inheritance is a way to create a new class from an existing class\nclass Student(Person):\n    def __init__(self, name, age, occupation, student_id):",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "Ama",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "Ama = Person(\"AMA\", 25, \"Engineer\")\n# Call the method of the object\nperson1.greet()\nalice.greet()\nAma.greet()\n# Inheritance\n# Inheritance is a way to create a new class from an existing class\nclass Student(Person):\n    def __init__(self, name, age, occupation, student_id):\n        # Call the constructor of the parent class",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "student1",
+        "kind": 5,
+        "importPath": "basics",
+        "description": "basics",
+        "peekOfCode": "student1 = Student(\"Coded\", 25, \"Doctor\", \"S12345\")\nstudent1.greet()  # Call the method of the parent class\nstudent1.study()  # Call the method of the child class\nstudent1.display_student_info()  # Call the method of the child class",
+        "detail": "basics",
+        "documentation": {}
+    },
+    {
+        "label": "BankAccount",
+        "kind": 6,
+        "importPath": "class_complex",
+        "description": "class_complex",
+        "peekOfCode": "class BankAccount:\n    def __init__(self, account_number, balance):\n        self.__account_number = account_number  # private attribute\n        self.__balance = balance  # private attribute\n    def deposit(self, amount):\n        if amount > 0:\n            self.__balance += amount\n            print(\"Deposited: \", amount)\n        else:\n            print(\"Invalid deposit amount\")",
+        "detail": "class_complex",
+        "documentation": {}
+    },
+    {
+        "label": "Animal",
+        "kind": 6,
+        "importPath": "class_complex",
+        "description": "class_complex",
+        "peekOfCode": "class Animal:\n    def sound(self):\n        print(\"Animal makes a sound\")\nclass Dog(Animal):\n    # override the sound method\n    def sound(self):\n        print(\"Dog barks\")\nanimal = Animal()\ndog = Dog()\nprint(\"Animal:\")",
+        "detail": "class_complex",
+        "documentation": {}
+    },
+    {
+        "label": "Dog",
+        "kind": 6,
+        "importPath": "class_complex",
+        "description": "class_complex",
+        "peekOfCode": "class Dog(Animal):\n    # override the sound method\n    def sound(self):\n        print(\"Dog barks\")\nanimal = Animal()\ndog = Dog()\nprint(\"Animal:\")\nanimal.sound()  # Output: Animal makes a sound\nprint(\"Dog:\")\ndog.sound()  # Output: Dog barks",
+        "detail": "class_complex",
+        "documentation": {}
+    },
+    {
+        "label": "account",
+        "kind": 5,
+        "importPath": "class_complex",
+        "description": "class_complex",
+        "peekOfCode": "account = BankAccount(\"123456789\", 1000)\naccount.deposit(500)\nprint(\"Current balance: \", account.get_balance())\naccount.withdraw(200)\nprint(\"Current balance: \", account.get_balance())\n#Polymorphism\n# Polymorphism is the ability to use the same method name for different types of objects\nclass Animal:\n    def sound(self):\n        print(\"Animal makes a sound\")",
+        "detail": "class_complex",
+        "documentation": {}
+    },
+    {
+        "label": "animal",
+        "kind": 5,
+        "importPath": "class_complex",
+        "description": "class_complex",
+        "peekOfCode": "animal = Animal()\ndog = Dog()\nprint(\"Animal:\")\nanimal.sound()  # Output: Animal makes a sound\nprint(\"Dog:\")\ndog.sound()  # Output: Dog barks\n#abstractions",
+        "detail": "class_complex",
+        "documentation": {}
+    },
+    {
+        "label": "dog",
+        "kind": 5,
+        "importPath": "class_complex",
+        "description": "class_complex",
+        "peekOfCode": "dog = Dog()\nprint(\"Animal:\")\nanimal.sound()  # Output: Animal makes a sound\nprint(\"Dog:\")\ndog.sound()  # Output: Dog barks\n#abstractions",
+        "detail": "class_complex",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "data = {\n    \"email\": [\n        \"Congratulations! You've won a free lottery. Claim now.\",\n        \"Hi, are we still meeting for lunch tomorrow?\",\n        \"You have been selected for a prize. Call now!\",\n        \"Dear friend, I hope you're doing well. Let's catch up soon.\",\n        \"Exclusive offer! Buy one, get one free on all items.\"\n    ],\n    \"label\": [1, 0, 1, 0, 1]  # 1: Spam, 0: Not Spam\n}",
+        "detail": "main",
+        "documentation": {}
+    }
+]
