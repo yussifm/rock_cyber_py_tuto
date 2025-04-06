@@ -410,14 +410,5 @@
         "peekOfCode": "dog = Dog()\nprint(\"Animal:\")\nanimal.sound()  # Output: Animal makes a sound\nprint(\"Dog:\")\ndog.sound()  # Output: Dog barks\n#abstractions",
         "detail": "class_complex",
         "documentation": {}
-    },
-    {
-        "label": "data",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "data = {\n    \"email\": [\n        \"Congratulations! You've won a free lottery. Claim now.\",\n        \"Hi, are we still meeting for lunch tomorrow?\",\n        \"You have been selected for a prize. Call now!\",\n        \"Dear friend, I hope you're doing well. Let's catch up soon.\",\n        \"Exclusive offer! Buy one, get one free on all items.\"\n    ],\n    \"label\": [1, 0, 1, 0, 1]  # 1: Spam, 0: Not Spam\n}",
-        "detail": "main",
-        "documentation": {}
     }
 ]
